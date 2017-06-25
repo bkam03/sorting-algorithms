@@ -1,3 +1,7 @@
+Insertion Sort
+
+This example of insertion sort is descending, and the number represents the person's weight.  Imagine a cafeteria for sumo, where there is a line and its first come, first serve until the food runs out. Whenever a new sumo enters the cafeteria, he's going to push as far forward as he can into the line.  In the end, the heaviest sumo eats first, and the lightest eats last.
+
 Sorting Algorithms
 
 For this assignment you will be responsible for the following:
