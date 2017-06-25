@@ -1,11 +1,5 @@
 
 function insertionSort ( array ){
-  /*
-  iterate through the array once.( you need to check each index only once.)
-    at each index, check if index is lower than the one before it.
-      if so, swap these two numbers.
-    move back a position and repeat.
-  */
   var numberHolder = null;
   var currentIndex = 0;
   var isSwapping = null;
