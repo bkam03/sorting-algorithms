@@ -1,10 +1,4 @@
-/*
-base case: array size < 2
-find pivot, position 0.
-split array into two, on either side of pivot.
-  iterate through array( except 0 ) and push into greater or lesser array.
-changing call: return quicksort( small array ) + pivot + quicksort( larger array )
-*/
+
 
 function quickSort ( array ){
   if( array.length < 2 ){
