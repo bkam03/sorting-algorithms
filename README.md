@@ -37,7 +37,12 @@ Selection Sort
 
 You're holding a deck of cards, but just the spades.  You look through the stack for the ace, and put it on top.  Then you find the 2, and put it behind the ace.  Then the 3, and so on until you have them in order.
 
-
+repeat array.length - 1 times.
+iterate through array, start one position higher each time
+grab the first number as current minimum.
+compare each position against this minimum
+if more minimum, replace current minimum and record position.
+when you hit the end of array, swap the first number and current min.
 
 
 Sorting Algorithms
