@@ -25,8 +25,10 @@
 */
 
 function mergeSort( array ){
-  if( array.length <= 2 ){
-    console.log( 'endpoint', array );
+  if( array.length === 2 ){
+    console.log( 'endpoint' );
+    return sortArray( [ array[ 0 ] ], [ array[ 1 ] ] );
+  } else if( array.length < 2 ){
     return array;
   } else{
     var splitArrayHere = Math.floor( array.length / 2 );
@@ -41,37 +43,37 @@ function mergeSort( array ){
 
 function sortArray( array1, array2 ){
   var sortedArray = [];
-  var array1Position = 0;
+/*  var array1Position = 0;
   var array2Position = 0;
   var array1Length = array1.length;
-  var array2Length = array2.length;
-  console.log( 'sort start' );
-
-  while( array1Position < array1Length || array2Position < array2Length ){
+  var array2Length = array2.length;*/
+  console.log( 'sort start', array1, array2 );
+  while(  array1.length > 0 || array2.length > 0 ){
     switch( true ){
-      case ( array2[ array2Position ] > array1[ array1Position ] ):
-        sortedArray.push( array2[ array2Position ] );
-        array2Position++;
-        console.log( 'array2Greater', array2[ array2Position ] );
-        break;
-      case ( array1[ array1Position ] > array2[ array2Position ] ):
-        console.log( 'array1Greater', array1[ array1Position ] );
-      case ( array1[ array1Position ] === array2[ array2Position ] ):
-        sortedArray.push( array1[ array1Position ] );
-        array1Position++;
+      case ( array1[ 0 ] === array2[ 0 ] ):
+        sortedArray.push( array1[ 0 ] );
+        array1.shift();
         console.log( 'arrays match' );
+        break;
+      case ( array1[ 0 ] < array2[ 0 ] || array2[ 0 ] == null ):
+        sortedArray.push( array1[ 0 ] );
+        array1.shift();
+        break;
+      case ( array1[ 0 ] > array2[ 0 ] || array1[ 0 ] == null ):
+        sortedArray.push( array2[ 0 ] );
+        array2.shift();
         break;
       default:
         break;
     }
   }
-  if( array1Position >= array1Length ){
+  /*if( array1Position >= array1Length ){
       sortedArray.concat( array2.slice( array2Position ) );
       console.log( 'concat array2' );
   } else if( array2Position >= array2Length ){
     sortedArray.concat( array1.slice( array1Position ) );
     console.log( 'concat array1' );
-  }
+  }*/
   console.log( 'sortedarray end', sortedArray );
   return sortedArray;
 }
