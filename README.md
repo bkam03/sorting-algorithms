@@ -11,7 +11,7 @@ Once you stop swapping move to the next new index.
 
 Bubble Sort
 
-You ever watch that show where they street race in oklahoma?  They have a list of the top 10 at the moment, and each person on that list gets to challenge the person above them on saturday night.  Over time the fastest makes it to the top, and the slower ones lose rank.
+You ever watch that show where they street race in oklahoma?  They have a list of the top 10 at the moment, and each person on that list gets to challenge the person above them on saturday night.  Over time the fastest makes it to the top, and the slower ones fall off the list.
 
 you iterate through the array, looping until there are no more swaps.
   for each iteration,
@@ -32,6 +32,30 @@ changing call: return quicksort( small array ) + pivot + quicksort( larger array
 Merge Sort
 
 Again with the children and the line.  You split them all into groups of 2 with the taller one on the left, shorter one on the right.  Then you have each group combine with another one, and arrange themselves.  Then combine until you have a line.
+
+divide array in half until it ends in pairs or singles
+  base case: array.length <= 2
+    if so sort
+  otherwise divide in half again
+    two arrays, each holding half the original.
+
+  then recombine these partial arrays.
+
+  recombine arrays
+    compare the two arrays being merged.  look at front of each.
+    four cases
+      both arrays full.  compare front
+      one array is empty.  other concats by default
+      other array is empty.  same.
+      both arrays empty.  return.
+
+    actual comparison cases
+      both positions undefined  do nothing, loop will next cycle
+      array1 undefined          concat array2 to sortedArray
+      array2 undefined          concat array1 to sortedArray
+      array1 greater            push array1 to sortedArray
+      array2 greater            push array2 to sortedArray
+      array1 == array2          push array1 to sortedArray
 
 Selection Sort
 
