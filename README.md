@@ -8,14 +8,23 @@ At each index, check if index is lower than the one before it.
   Move back a position and repeat.
 Once you stop swapping move to the next new index.
 
+Best case scenario, where everything is already in order:  the sort will iterate through the array once without having to swap anything and end. linear complexity.
+
+Worst case:  the array is backward.  the sort will move each item ( position # ) times.  n * ( n - 1 ) * ( n - 2 ) etc. swaps.
+
 
 Bubble Sort
 
 You ever watch that show where they street race in oklahoma?  They have a list of the top 10 at the moment, and each person on that list gets to challenge the person above them on saturday night.  Over time the fastest makes it to the top, and the slower ones fall off the list.
 
 you iterate through the array, looping until there are no more swaps.
-  for each iteration,
-  compare each position with the one before it, and swap if the greater position has a smaller value.
+for each iteration,
+compare each position with the one before it, and swap if the greater position has a smaller value.
+
+Best case: Array is in order.  Iterates once through the array, moves nothing. ends.
+
+Worst case: List is backwards, everything has to be moved to the other end of the array.  ( n - 1 ) * ( n - 2 ) * ( n - 3 ) etc. swaps.
+
 
 
 Quick Sort
@@ -27,6 +36,11 @@ find pivot, position 0.
 split array into two, on either side of pivot.
   iterate through array( except 0 ) and push into greater or lesser array.
 changing call: return quicksort( small array ) + pivot + quicksort( larger array )
+
+Best Case:  The sort chooses good pivots, located right in the middle of each range.  This minimizes the number of splits needed.
+
+Worst Case:  The sort chooses pivots on the extremes of the range, so the array splits until practically everything is a pivot before recombining.
+
 
 
 Merge Sort
@@ -57,6 +71,8 @@ divide array in half until it ends in pairs or singles
       array2 greater            push array2 to sortedArray
       array1 == array2          push array1 to sortedArray
 
+  Best Case and Worst Case: Merge Sort splits everything and then recombines it, regardless of how values are placed. So there is only the average case, every case.
+
 Selection Sort
 
 You're holding a deck of cards, but just the spades.  You look through the stack for the ace, and put it on top.  Then you find the 2, and put it behind the ace.  Then the 3, and so on until you have them in order.
@@ -68,22 +84,7 @@ compare each position against this minimum
 if more minimum, replace current minimum and record position.
 when you hit the end of array, swap the first number and current min.
 
-
-Sorting Algorithms
-
-For this assignment you will be responsible for the following:
-
-Each module should be able to sort a randomized array of numbers.
-
-Explain to a five year old how the algorithm works (3-4 sentences max)
-
-Psuedo code for each sorting implementation
-
-In your own words, describe the performance of the alogirthm for the following cases:
-
-Best case scenario
-
-Worst case scenario
+Best Case and Worst Case: The sorting algorithm needs to find the absolute minimum value, then the second lowest, etc all the way to the end.  No matter what the order is, this is going to happen.
 
 
 
