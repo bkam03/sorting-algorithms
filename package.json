@@ -1,0 +1,23 @@
+{
+  "name": "sorting-algorithms",
+  "version": "1.0.0",
+  "description": "Insertion Sort",
+  "main": "bubblesort.js",
+  "scripts": {
+    "test": "mocha -R spec --bail --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkam03/sorting-algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bkam03/sorting-algorithms/issues"
+  },
+  "homepage": "https://github.com/bkam03/sorting-algorithms#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
