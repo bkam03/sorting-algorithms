@@ -6,13 +6,10 @@ function insertionSort ( array ){
 
   for( var i = 1; i < array.length; i++ ){
     currentIndex = i;
-    console.log( 'currentIndex', currentIndex );
     do{
-      console.log( 'loop executing' );
       isSwapping = false;
-      console.log( array[ currentIndex ], array[ currentIndex - 1 ] );
+
       if( array[ currentIndex ] < array[ currentIndex - 1 ] ){
-        console.log( 'swapping', array[ currentIndex ], array[ currentIndex - 1 ]);
       numberHolder = array[ currentIndex ];
       array[ currentIndex ] = array[ currentIndex - 1 ];
       array[ currentIndex - 1 ] = numberHolder;
