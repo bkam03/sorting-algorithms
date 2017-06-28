@@ -17,8 +17,10 @@ function bubbleSort(arr){
     endPosOfUnsortedSectionOfArray--;
   } while ( isSwapping );
   console.log( arr );
+  return arr;
 }
 
 var array = [ 9, 4, 5, 6, 12, 2 ];
 var sorted = bubbleSort(array);
 console.log( sorted );
+
