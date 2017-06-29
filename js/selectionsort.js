@@ -28,4 +28,4 @@ function selectionSort ( array ){
 var array = [19, 97, 76, 98, 35, 29, 71, 27, 65, 86 ];
 
 var sorted = selectionSort( array );
-// console.log( sorted );
+console.log( sorted );
