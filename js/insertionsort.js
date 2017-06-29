@@ -10,10 +10,10 @@ function insertionSort ( array ){
       isSwapping = false;
 
       if( array[ currentIndex ] < array[ currentIndex - 1 ] ){
-      numberHolder = array[ currentIndex ];
-      array[ currentIndex ] = array[ currentIndex - 1 ];
-      array[ currentIndex - 1 ] = numberHolder;
-      isSwapping = true;
+        numberHolder = array[ currentIndex ];
+        array[ currentIndex ] = array[ currentIndex - 1 ];
+        array[ currentIndex - 1 ] = numberHolder;
+        isSwapping = true;
       }
       currentIndex--;
     } while( isSwapping && currentIndex > 0 );
