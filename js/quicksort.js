@@ -20,4 +20,4 @@ function quickSort ( array ){
 
 var array = [ 48, 42, 87, 4, 86,40, 37, 60, 96, 10 ];
 var sorted = quickSort( array );
-console.log( sorted );
+// console.log( sorted );

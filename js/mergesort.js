@@ -43,4 +43,4 @@ function sortArray( array1, array2 ){
 
 var array = [ 62, 62, 70, 35, 47, 11, 67, 18, 54, 1 ];
 var sorted = mergeSort( array );
-console.log( sorted );
+// console.log( sorted );

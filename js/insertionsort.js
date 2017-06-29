@@ -24,4 +24,4 @@ function insertionSort ( array ){
 
 var array = [ 23, 64, 91, 8, 17, 4, 81, 44 ];
 var sorted = insertionSort( array );
-console.log( sorted );
+//console.log( sorted );

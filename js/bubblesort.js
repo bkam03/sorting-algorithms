@@ -22,5 +22,5 @@ function bubbleSort(arr){
 
 var array = [ 9, 4, 5, 6, 12, 2 ];
 var sorted = bubbleSort(array);
-console.log( sorted );
+//console.log( sorted );
 
